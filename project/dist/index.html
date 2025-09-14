@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spark Edge Electrical - Professional Electrical Contractors in Delhi</title>
+    <meta name="description" content="Professional electrical contracting services in Delhi. Commercial & residential wiring, safety inspections, and electrical installations. Licensed contractors serving Delhi & NCR." />
+    <meta name="keywords" content="electrical contractor Delhi, building electrical work, commercial wiring, residential electrical, electrical installation Delhi" />
+    <script type="module" crossorigin src="/assets/index-CYcBvGEs.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Vqt31sn7.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  
+<!-- Assistant-injected contact form handler -->
+<script>
+(function(){
+  const BACKEND_URL = 'http://localhost:3000/contact';
+  window.addEventListener('DOMContentLoaded', function() {
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+      const hasMessage = form.querySelector('textarea[name="message"], textarea#message');
+      const hasEmail = form.querySelector('input[name="email"], input#email');
+      if (hasMessage && hasEmail) {
+        form.addEventListener('submit', async function(e){
+          e.preventDefault();
+          const formData = new FormData(form);
+          const payload = {};
+          formData.forEach((v,k)=> payload[k]=v);
+          try {
+            const resp = await fetch(BACKEND_URL, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload),
+            });
+            const json = await resp.json();
+            alert(json.message || JSON.stringify(json));
+          } catch (err) {
+            alert('Error sending message: '+err.message);
+          }
+        });
+      }
+    });
+  });
+})();
+</script>
+<!-- End Assistant-injected script -->
+
+<script src="./contact-handler.js"></script>
+</body>
+</html>
