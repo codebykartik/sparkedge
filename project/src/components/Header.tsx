@@ -37,7 +37,7 @@ const Header = () => {
             <span className={`text-xl font-bold transition-colors duration-300 ${
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}>
-              Spark Edge Electrical
+              SparkEdge Electrical
             </span>
           </div>
 
