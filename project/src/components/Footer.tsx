@@ -25,7 +25,7 @@ const Footer = () => {
                   <Zap className="h-8 w-8 text-white" />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold">Spark Edge Electrical</h3>
+              <h3 className="text-2xl font-bold">SparkEdge Electrical</h3>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
               Professional electrical contracting services for buildings across Delhi and NCR. 
