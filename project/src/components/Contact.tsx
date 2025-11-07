@@ -69,14 +69,14 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="flex items-start space-x-4 group">
                 <div className="bg-gradient-to-r from-yellow-400 to-orange-500 p-3 rounded-full group-hover:scale-110 transition-transform duration-300">
-                  <a href="tel:8851590086" className="block">
+                  <a href="tel:8130476851" className="block">
                     <Phone className="h-6 w-6 text-white" />
                   </a>
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1">Call Us</h4>
-                  <a href="tel:8851590086" className="text-gray-300 hover:text-yellow-400 transition-colors duration-200">
-                    8851590086
+                  <a href="tel:8130476851" className="text-gray-300 hover:text-yellow-400 transition-colors duration-200">
+                   8130476851
                   </a>
                   <p className="text-gray-400 text-sm">Available 24/7 for emergencies</p>
                 </div>
